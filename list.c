@@ -107,7 +107,7 @@ void * popBack(List * list) {
     return popCurrent(list);
 }
 
-void * popCurrent(List * list) { /* this*/
+void * popCurrent(List * list) {
     if (list == NULL || list->current == NULL) return NULL;
 
     Node* aux = list->current;
@@ -121,7 +121,6 @@ void * popCurrent(List * list) { /* this*/
     else list->tail = izq;
     
     list->current->next = der;
-    free(aux->data);
     return aux->data;
 }
 
