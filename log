@@ -119,3 +119,15 @@ Sun 30 Mar 2025 12:46:20 AM UTC:
  tests:  11|1
 total_score: 55/70
 4ef315b
+Sun 30 Mar 2025 12:48:40 AM UTC: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:122:19: error: dereferencing ‘void *’ pointer [-Werror]
+  122 |         return aux->data;
+      |                   ^~
+list.c:122:19: error: request for member ‘data’ in something not a structure or union
+cc1: all warnings being treated as errors
+Compilation failed
+9e88588
