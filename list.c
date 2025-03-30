@@ -120,8 +120,8 @@ void * popCurrent(List * list) { /* this*/
     if (der != NULL) der->prev = izq;
     else list->tail = izq;
     
-    free(aux);
     list->current->next = der;
+    free(aux->data);
     return aux->data;
 }
 
