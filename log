@@ -137,3 +137,17 @@ Sun 30 Mar 2025 12:48:54 AM UTC:
  tests:  11|1
 total_score: 55/70
 9483c7f
+Sun 30 Mar 2025 12:50:02 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:133:12: error: pointer ‘aux’ used after ‘free’ [-Werror=use-after-free]
+  133 |     return aux;
+      |            ^~~
+list.c:132:5: note: call to ‘free’ here
+  132 |     free(aux);
+      |     ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+b11e181
