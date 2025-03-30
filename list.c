@@ -119,7 +119,7 @@ void * popCurrent(List * list) { /* this*/
         list->head = NULL;
         list->tail = NULL;
         list->current = NULL;
-        return data;
+        return aux;
     }
     
     if (izq != NULL) izq->next = der;
