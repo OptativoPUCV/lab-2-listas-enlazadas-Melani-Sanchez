@@ -108,6 +108,7 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) { /* this*/
+    if (list == NULL || list->current == NULL) return NULL;
 
     Node* aux = list->current;
     Node* izq = list->current->prev;
