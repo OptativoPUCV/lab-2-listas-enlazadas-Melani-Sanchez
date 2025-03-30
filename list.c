@@ -114,6 +114,14 @@ void * popCurrent(List * list) { /* this*/
     Node* izq = list->current->prev;
     Node* der = list->current->next;
 
+    if (list->current == list->head) {
+        free(list->current);
+        list->head = NULL;
+        list->tail = NULL;
+        list->current = NULL;
+        return data;
+    }
+    
     if (izq != NULL) izq->next = der;
     else list->head = der;
 

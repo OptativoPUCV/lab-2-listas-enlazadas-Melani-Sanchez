@@ -102,3 +102,14 @@ Sun 30 Mar 2025 12:28:03 AM UTC:
  1 file changed, 2 insertions(+)
  tests:  0|0
 83e44be
+Sun 30 Mar 2025 12:45:51 AM UTC: 
+ list.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:122:16: error: ‘data’ undeclared (first use in this function)
+  122 |         return data;
+      |                ^~~~
+list.c:122:16: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+af2d194
