@@ -130,7 +130,7 @@ void * popCurrent(List * list) { /* this*/
 
     list->current = der;
     free(aux);
-    return aux;
+    return list->current->data;
 }
 
 void cleanList(List * list) {
